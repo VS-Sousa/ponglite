@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://nbq11lfcmirf"]
+
+[ext_resource type="PackedScene" uid="uid://budl4whb26rd1" path="res://scenes/Racket/Racket.tscn" id="1_qv31u"]
+[ext_resource type="Script" uid="uid://be5k30u3y6fp7" path="res://main/Main.gd" id="2_wbnyf"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_qv31u")]
+position = Vector2(85, 363)
+script = ExtResource("2_wbnyf")
