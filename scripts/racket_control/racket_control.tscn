@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgrsy5a306env"]
+
+[ext_resource type="Script" uid="uid://djjyrf8ukmmsd" path="res://scripts/racket_control/racket_control.gd" id="1_clmr4"]
+
+[node name="RacketControl" type="Node"]
+script = ExtResource("1_clmr4")

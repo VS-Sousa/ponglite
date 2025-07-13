@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://6w6dupoeh4iw"]
+
+[ext_resource type="Script" uid="uid://b5ot1v1dmxxtf" path="res://scripts/racket_control/implementations/cpu/cpu_racket_control.gd" id="1_yp0nh"]
+
+[node name="CpuRacketControl" type="Node"]
+script = ExtResource("1_yp0nh")
+metadata/_custom_type_script = "uid://djjyrf8ukmmsd"

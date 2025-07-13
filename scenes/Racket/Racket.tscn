@@ -1,23 +1,22 @@
-[gd_scene load_steps=5 format=3 uid="uid://budl4whb26rd1"]
+[gd_scene load_steps=3 format=3 uid="uid://idlktk5kcr8l"]
 
-[ext_resource type="Script" uid="uid://buk8se01qq8sp" path="res://scenes/Racket/Racket.gd" id="1_jriov"]
+[ext_resource type="Script" uid="uid://bamgo655b47x6" path="res://scenes/racket/racket.gd" id="1_jriov"]
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_m6q7r"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uj5gi"]
+size = Vector2(20, 120)
 
-[sub_resource type="GDScript" id="GDScript_jriov"]
+[node name="Racket" type="StaticBody2D"]
+script = ExtResource("1_jriov")
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8fmu"]
-size = Vector2(30, 102.5)
-script = SubResource("GDScript_jriov")
-
-[node name="Racket" type="Area2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = SubResource("CanvasTexture_m6q7r")
-region_enabled = true
-region_rect = Rect2(0, -102, 30.5, 103)
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -60.0
+offset_right = 20.0
+offset_bottom = 60.0
+grow_vertical = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -0.75)
-shape = SubResource("RectangleShape2D_s8fmu")
-script = ExtResource("1_jriov")
+position = Vector2(10, 0)
+shape = SubResource("RectangleShape2D_uj5gi")

@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6gieeanusda4"]
+
+[ext_resource type="PackedScene" uid="uid://dgrsy5a306env" path="res://scripts/racket_control/racket_control.tscn" id="1_mqfvl"]
+[ext_resource type="Script" uid="uid://dmws4a7rwq3ds" path="res://scripts/racket_control/implementations/player/player_racket_control.gd" id="2_r8vr8"]
+
+[node name="PlayerRacketControl" instance=ExtResource("1_mqfvl")]
+script = ExtResource("2_r8vr8")
